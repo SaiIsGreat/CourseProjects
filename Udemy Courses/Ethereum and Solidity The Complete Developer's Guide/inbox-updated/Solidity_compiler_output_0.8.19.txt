@@ -1,0 +1,13 @@
+{
+  'Inbox.sol': {
+    Inbox: {
+      abi: [Array],
+      devdoc: [Object],
+      evm: [Object],
+      ewasm: [Object],
+      metadata: '{"compiler":{"version":"0.8.19+commit.7dd6d404"},"language":"Solidity","output":{"abi":[{"inputs":[{"internalType":"string","name":"initialMessage","type":"string"}],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[],"name":"message","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"newMessage","type":"string"}],"name":"setMessage","outputs":[],"stateMutability":"nonpayable","type":"function"}],"devdoc":{"kind":"dev","methods":{},"version":1},"userdoc":{"kind":"user","methods":{},"version":1}},"settings":{"compilationTarget":{"Inbox.sol":"Inbox"},"evmVersion":"paris","libraries":{},"metadata":{"bytecodeHash":"ipfs"},"optimizer":{"enabled":false,"runs":200},"remappings":[]},"sources":{"Inbox.sol":{"keccak256":"0x1f8d70796147deb3f47e38d46b307f17654b8b3351389892aec32ad0210c8884","license":"MIT","urls":["bzz-raw://46a9dbe3005c13af467697495725e12bec93e1058428d834db6ab09789023c33","dweb:/ipfs/QmRj6ngg6B4iTQiDRKhrVo5cCqSBscxUAmDbesBJeoGcgo"]}},"version":1}',
+      storageLayout: [Object],
+      userdoc: [Object]
+    }
+  }
+}
