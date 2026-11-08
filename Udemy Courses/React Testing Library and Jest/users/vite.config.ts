@@ -1,8 +1,12 @@
-import react from "@vitejs/plugin-react";
+import react, { reactCompilerPreset } from "@vitejs/plugin-react";
 import { defineConfig, lazyPlugins } from "vite-plus";
+import babel from "@rolldown/plugin-babel";
 
 // https://vite.dev/config/
 export default defineConfig({
+  staged: {
+    "*": "vp check --fix",
+  },
   fmt: {},
   lint: {
     plugins: ["react", "typescript", "oxc"],
@@ -27,5 +31,8 @@ export default defineConfig({
       },
     ],
   },
-  plugins: lazyPlugins(() => [react()]),
+  plugins: lazyPlugins(() => [
+    react(),
+    babel({ presets: [reactCompilerPreset()] }),
+  ]),
 });
