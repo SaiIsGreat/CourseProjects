@@ -40,8 +40,8 @@ void RDisplay(struct Node *p)
 {
   if (p != NULL)
   {
-    printf("%d ", p->data);
     RDisplay(p->next);
+    printf("%d ", p->data);
   }
 }
 
