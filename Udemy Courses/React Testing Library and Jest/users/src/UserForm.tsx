@@ -13,6 +13,9 @@ const UserForm = ({ onUserAdd }: UserFormProps) => {
     event.preventDefault();
 
     onUserAdd({ name, email });
+
+    setName("");
+    setEmail("");
   };
 
   return (
